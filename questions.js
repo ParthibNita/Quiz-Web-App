@@ -82,7 +82,7 @@ const questions = [
       { text: "var", correct: false },
       { text: "const", correct: false },
       { text: "let", correct: false },
-      { text: "All of the above", correct: true },
+      { text: "All of them are correct", correct: true },
     ],
   },
   {
