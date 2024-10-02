@@ -119,7 +119,7 @@ const questions = [
       { text: "Equality of value", correct: false },
       { text: "Equality of value and type", correct: true },
       { text: "Assignment", correct: false },
-      { text: "None of the above", correct: false },
+      { text: "None of them are correct", correct: false },
     ],
   },
   {
