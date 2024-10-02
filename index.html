@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
     <title>Quiz App</title>
 </head>
 <body>
-    <div class="app">
-        <h1>Quiz App</h1>
+    <div class="app" id="main">
+        <div class="header">
+            <h1>Quiz App</h1>
+            <button id="dark-toggle-btn">
+                <i class="fas fa-moon" id="moon-icon"></i>
+                <i class="fas fa-sun" id="sun-icon"></i>
+            </button>
+        </div>
         <div class="quiz">
             <h2 id="question">Question</h2>
             <div id="timer-container">

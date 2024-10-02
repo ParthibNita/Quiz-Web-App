@@ -130,7 +130,7 @@ function showScore() {
 
   startButton.innerHTML = "Play Again";
   startButton.style.display = "block";
-  questionElement.innerHTML = `Your score is ${score}`;
+  questionElement.innerHTML = `Your score is ${score} out of ${questions.length}`;
   questionElement.style.textAlign = "center";
 }
 
@@ -139,6 +139,32 @@ function resetState() {
   questionElement.style.textAlign = "left";
   answerButton.innerHTML = "";
 }
+
+//dark-mode
+const darkToggle = document.getElementById("dark-toggle-btn");
+const moon = document.getElementById("moon-icon");
+const sun = document.getElementById("sun-icon");
+const app = document.getElementById("main");
+let darkModeCheck = false;
+
+function toggleDarkMode() {
+  darkModeCheck = !darkModeCheck;
+  // console.log(darkModeCheck);
+  updateTheme();
+}
+
+function updateTheme() {
+  if (darkModeCheck) {
+    app.classList.add("dark-mode");
+    moon.style.display = "none";
+    sun.style.display = "block";
+  } else {
+    app.classList.remove("dark-mode");
+    moon.style.display = "block";
+    sun.style.display = "none";
+  }
+}
+darkToggle.addEventListener("click", toggleDarkMode);
 
 startButton.addEventListener("click", () => {
   scoreCircle.classList.add("hidden");
