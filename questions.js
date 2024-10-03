@@ -141,6 +141,70 @@ const questions = [
       { text: "String", correct: false },
     ],
   },
+  {
+    question: "What is the primary purpose of a CSS Flexbox?",
+    choices: [
+      { text: "To create grid layouts", correct: false },
+      {
+        text: "To create flexible layouts that adjust to different screen sizes",
+        correct: true,
+      },
+      { text: "To format text", correct: false },
+      { text: "To create animations", correct: false },
+    ],
+  },
+  {
+    question: "Which HTML element is used to embed JavaScript code?",
+    choices: [
+      { text: "<script>", correct: true },
+      { text: "<javascript>", correct: false },
+      { text: "<js>", correct: false },
+      { text: "<code>", correct: false },
+    ],
+  },
+  {
+    question: "What is the purpose of the 'async' attribute in a script tag?",
+    choices: [
+      {
+        text: "To execute the script only when the user clicks a button",
+        correct: false,
+      },
+      {
+        text: "To load the script asynchronously without blocking HTML parsing",
+        correct: true,
+      },
+      {
+        text: "To run the script after all images have loaded",
+        correct: false,
+      },
+      { text: "To enable debugging mode", correct: false },
+    ],
+  },
+  {
+    question: "What does the 'box-sizing: border-box;' CSS property do?",
+    choices: [
+      {
+        text: "Includes padding and border in the element's total width and height",
+        correct: true,
+      },
+      {
+        text: "Excludes padding and border from the element's total width and height",
+        correct: false,
+      },
+      { text: "Sets the box-shadow property of an element", correct: false },
+      { text: "Fixes the element's width and height", correct: false },
+    ],
+  },
+  {
+    question:
+      "What is the correct syntax to make an API call in JavaScript using the Fetch API?",
+    choices: [
+      { text: "fetch('url').then(response => response.json())", correct: true },
+      { text: "callAPI('url')", correct: false },
+      { text: "request('url').getJSON()", correct: false },
+      { text: "apiFetch('url').then(data => data)", correct: false },
+    ],
+  },
 ];
 
 export default questions;
