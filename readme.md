@@ -1,6 +1,12 @@
 # Quiz-Web-App
 
-A user-friendly quiz interface that engages users and provides a seamless experience
+A user-friendly quiz interface that engages users and provides a seamless experience.
+
+### Features
+
+- **Dark Mode :** A toggleable dark mode feature that allows users to switch between light and dark themes.
+- **Local Storage :** The application preserves the user's theme preference in local storage, so it persists even after the user closes the browser.
+- **Timer :** A timer is displayed for each question, and the user's score is updated accordingly.
 
 ### Screenshot
 
