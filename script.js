@@ -150,6 +150,7 @@ let darkModeCheck = false;
 function toggleDarkMode() {
   darkModeCheck = !darkModeCheck;
   // console.log(darkModeCheck);
+  localStorage.setItem("darkMode", darkModeCheck);
   updateTheme();
 }
 
@@ -177,4 +178,8 @@ startButton.addEventListener("click", () => {
 
 nextButton.addEventListener("click", goToNextQuestion);
 
-startQuiz();
+(() => {
+  darkModeCheck = localStorage.getItem("darkMode");
+  updateTheme();
+  startQuiz();
+})();
