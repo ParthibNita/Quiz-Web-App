@@ -145,12 +145,12 @@ const darkToggle = document.getElementById("dark-toggle-btn");
 const moon = document.getElementById("moon-icon");
 const sun = document.getElementById("sun-icon");
 const app = document.getElementById("main");
-let darkModeCheck = false;
+let darkModeCheck = JSON.parse(localStorage.getItem("darkMode")) || false;
 
 function toggleDarkMode() {
   darkModeCheck = !darkModeCheck;
   // console.log(darkModeCheck);
-  localStorage.setItem("darkMode", darkModeCheck);
+  localStorage.setItem("darkMode", JSON.stringify(darkModeCheck));
   updateTheme();
 }
 
@@ -179,7 +179,6 @@ startButton.addEventListener("click", () => {
 nextButton.addEventListener("click", goToNextQuestion);
 
 (() => {
-  darkModeCheck = localStorage.getItem("darkMode");
   updateTheme();
   startQuiz();
 })();
